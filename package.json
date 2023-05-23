@@ -9,7 +9,7 @@
     "prisma:dev:deploy": "prisma migrate deploy",
     "db:dev:rm": "sudo docker compose rm dev-db -s -f -v",
     "db:dev:up": "sudo docker compose up dev-db -d",
-    "db:dev:restart": "yarn db:dev:rm && yarn db:dev:up && sleep 1 && yarn prisma:dev:depoly",
+    "db:dev:restart": "yarn db:dev:rm && yarn db:dev:up && sleep 1 && yarn prisma:dev:deploy",
     "prisma:test:deploy": "dotenv -e .env.test -- prisma migrate deploy",
     "db:test:rm": "sudo docker compose rm test-db -s -f -v",
     "db:test:up": "sudo docker compose up test-db -d",
